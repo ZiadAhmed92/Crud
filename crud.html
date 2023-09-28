@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  
+<div class="w-75 py-4 mx-auto">
+    <div class="alert alert-danger" id="alert"></div>
+<div class="form-group">
+    <label for="productName">productName</label>
+    <input type="text" id="productName" class="form-control">
+</div>
+<div class="form-group">
+    <label for="productPrice">productPrice</label>
+    <input type="number" id="productPrice" class="form-control">
+</div>
+<div class="form-group">
+    <label for="productCategory">productCategory</label>
+    <input type="text" id="productCategory" class="form-control">
+</div>
+<div class="form-group">
+    <label for="productDesc">productDesc</label>
+
+    <textarea id="productDesc"class="form-control" name="w3review" rows="2" cols="50">
+   
+    </textarea>
+</div>
+
+<button class="btn btn-outline-info text-capitalize"id="btn"> add produce</button>
+</div>
+<div class="w-75 py-2 mx-auto">
+    <input onkeyup=" searchProducts(this.value)" type="search" placeholder="Search..." class="form-control w-75 mx-auto p-2"id="search">
+<table class="table my-3 text-center">
+    <thead>
+        <th class="text-capitalize">index</th>
+        <th class="text-capitalize">Name</th>
+        <th class="text-capitalize">Price</th>
+        <th class="text-capitalize">Category</th>
+        <th class="text-capitalize">Description</th>
+        <th class="text-capitalize">update</th>
+        <th class="text-capitalize">delete</th>
+       
+    </thead>
+    <tbody id="tbody">
+        <!-- <tr>
+            <td class="text-capitalize">0</td>
+            <td class="text-capitalize">toshiba</td>
+            <td class="text-capitalize">8000</td>
+            <td class="text-capitalize">mobile</td>
+            <td class="text-capitalize">good</td>
+            <td><button class="btn btn-outline-warning text-capitalize">update</button></td>
+            <td><button class="btn btn-outline-dark text-capitalize">delete</button></td>
+        </tr> -->
+    </tbody>
+</table>
+</div>
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
